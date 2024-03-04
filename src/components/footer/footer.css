@@ -1,21 +1,27 @@
-/** Desktop Styles */
+/** Taskbar Styles */
 
-.desktop-container {
-    width: 100%;
-    height: calc(100vh - 8rem);
+.taskbar-container {
+    height: 4rem;
     padding: 0 2rem;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.application-wrapper {
-    margin-top: 2rem;
-
+.taskbar-links {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    align-items: center;
+    gap: 0.5rem;
 }
+
+/** startMenu Styles */
+
+
+
+/** Terminal Styles */
+
+
 
 /** Folder Styles */
 
@@ -45,34 +51,24 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/** Resume Styles */
+/** Github Styles */
 
-.resume-container {
+.github-container {
     width: 40rem;
-    height: 45rem;
-    background: white;
-    margin: 10rem;
+    height: 25rem;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    padding-bottom: 10rem;
+    background: rgb(39, 39, 39);
 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     position: absolute;
 
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
     border-radius: 0.5rem;
-    box-shadow: 
-        rgba(0, 0, 0, 0.19) 0px 10px 20px, 
-        rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.resume-header {
-    width: 100%;
-    height: 2rem;
-    padding: 0.5rem;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
+/** Date & Time Styles */

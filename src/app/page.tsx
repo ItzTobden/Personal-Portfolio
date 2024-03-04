@@ -1,6 +1,7 @@
 'use client'
 
 import Desktop from '@/components/body/Desktop';
+import Taskbar from '@/components/footer/Taskbar';
 import Header from '@/components/header/Header'
 import StarterLoading from '@/components/ui/loading/loading-starter';
 import { useRouter } from 'next/navigation';
@@ -32,7 +33,7 @@ function RootPage({ isLoggedIn }: RootPageProps) {
             <div className="root-container">
                 <Header />
                 <Desktop />
-                RootPage
+                <Taskbar />
             </div>
         ) : (
             <StarterLoading />
