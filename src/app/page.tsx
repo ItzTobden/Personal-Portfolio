@@ -1,5 +1,6 @@
 'use client'
 
+import Desktop from '@/components/body/Desktop';
 import Header from '@/components/header/Header'
 import StarterLoading from '@/components/ui/loading/loading-starter';
 import { useRouter } from 'next/navigation';
@@ -30,6 +31,7 @@ function RootPage({ isLoggedIn }: RootPageProps) {
         { !isLoading ? (
             <div className="root-container">
                 <Header />
+                <Desktop />
                 RootPage
             </div>
         ) : (

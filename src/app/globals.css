@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,7 +38,7 @@
   }
  
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 200 84% 4.9%;
     --foreground: 210 40% 98%;
  
     --card: 222.2 84% 4.9%;
@@ -73,4 +75,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+  font-family: "Gloria Hallelujah", cursive;
 }

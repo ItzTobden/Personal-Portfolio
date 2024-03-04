@@ -1,6 +1,6 @@
 import React from 'react'
 import './signin.css'
-import { SigninForm } from '@/schema/formSchema'
+import { SigninForm } from '@/schema/form-schema'
 
 function SigninPage() {
     return (
