@@ -7,11 +7,7 @@ import StarterLoading from '@/components/ui/loading/loading-starter';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
-interface RootPageProps {
-    isLoggedIn: boolean;
-}
-
-function RootPage({ isLoggedIn }: RootPageProps) {
+function RootPage({ isLoggedIn }: any) {
     const router = useRouter()
     const [isLoading, setIsLoading] = useState<boolean>(true)
 
