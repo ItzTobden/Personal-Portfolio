@@ -50,7 +50,7 @@ const Skills = () => {
             /><h1>Skills</h1></Button>
 
             { openSkills && (
-                <div className="folder-container"
+                <div className="skills-container"
                     style={{ top: position.y, left: position.x }}
                     onMouseDown={handleMouseDown}
                     onMouseMove={handleMouseMove}
