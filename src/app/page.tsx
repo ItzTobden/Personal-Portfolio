@@ -14,7 +14,7 @@ function RootPage({ isLoggedIn }: any) {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
-        }, 4000)
+        }, 5000)
     }, [isLoading, setIsLoading])
 
     useEffect(() => {
