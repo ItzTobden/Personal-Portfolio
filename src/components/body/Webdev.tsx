@@ -5,6 +5,8 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import './body.css'
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '../ui/resizable'
+import Lottie from 'lottie-react'
+import robotAnimation from '../../../public/lotties/Animation - robot.json'
 
 const Webdev = () => {
     const [openWebdev, setOpenWebdev] = useState(false)
@@ -69,8 +71,8 @@ const Webdev = () => {
                         direction="horizontal"
                         className="file-wrapper"
                     >
-                        <ResizablePanel defaultSize={30}>
-                            <h1>hello</h1>
+                        <ResizablePanel defaultSize={30} className='flex items-center'>
+                            <Lottie animationData={robotAnimation} />
                         </ResizablePanel>
                         <ResizableHandle withHandle />
                         <ResizablePanel defaultSize={70} className='file-files'>
