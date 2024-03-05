@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import './body.css'
+import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '../ui/resizable'
 
 const Webdev = () => {
     const [openWebdev, setOpenWebdev] = useState(false)
@@ -50,13 +51,13 @@ const Webdev = () => {
             /><h1>Web Dev</h1></Button>
 
             { openWebdev && (
-                <div className="folder-container"
+                <div className="file-container"
                     style={{ top: position.y, left: position.x }}
                     onMouseDown={handleMouseDown}
                     onMouseMove={handleMouseMove}
                     onMouseUp={handleMouseUp}
                 >
-                    <div className="folder-header">
+                    <div className="file-header">
                         <h1>📂 Web Dev</h1>
                         <Button
                             variant={'link'}
@@ -64,9 +65,35 @@ const Webdev = () => {
                             onClick={toggleWebdev}
                         >❌</Button>
                     </div>
-                    <div className="folder-wrapper">
-                        file
-                    </div>
+                    <ResizablePanelGroup
+                        direction="horizontal"
+                        className="file-wrapper"
+                    >
+                        <ResizablePanel defaultSize={30}>
+                            <h1>hello</h1>
+                        </ResizablePanel>
+                        <ResizableHandle withHandle />
+                        <ResizablePanel defaultSize={70} className='file-files'>
+                            <Button
+                                variant={'link'}
+                                className='bg-transparent p-0 m-0 flex flex-col decoration-transparent'
+                            ><Image
+                                src='/svgs/Icons_folder.svg'
+                                alt='webdev icon'
+                                width={50}
+                                height={50}
+                            /><h1>Chat Application</h1></Button>
+                            <Button
+                                variant={'link'}
+                                className='bg-transparent p-0 m-0 flex flex-col decoration-transparent'
+                            ><Image
+                                src='/svgs/Icons_folder.svg'
+                                alt='webdev icon'
+                                width={50}
+                                height={50}
+                            /><h1>Restaurent Web</h1></Button>
+                        </ResizablePanel>
+                    </ResizablePanelGroup>
                 </div>
             )} 
         </>
