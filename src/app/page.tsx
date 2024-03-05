@@ -9,7 +9,7 @@ import React, { useEffect, useState } from 'react'
 
 function RootPage({ isLoggedIn }: any) {
     const router = useRouter()
-    const [isLoading, setIsLoading] = useState<boolean>(true)
+    const [isLoading, setIsLoading] = useState<boolean>(false)
 
     useEffect(() => {
         setTimeout(() => {

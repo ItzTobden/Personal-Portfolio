@@ -17,9 +17,9 @@
     gap: 3rem;
 }
 
-/** Folder Styles */
+/** file Styles */
 
-.folder-container {
+.file-container {
     width: 40rem;
     height: 25rem;
     margin-top: 10rem;
@@ -35,7 +35,7 @@
     border-radius: 0.5rem;
 }
 
-.folder-header {
+.file-header {
     padding: 0 0.5rem;
 
     display: flex;
@@ -45,13 +45,30 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.file-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.file-files {
+    width: 100%;
+    padding: 2rem 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/** Blender Styles */
+/** Webdev styles */
 /** Skills Styles */
 
 .skills-container {
-    width: 100rem;
-    height: 50rem;
-    background: white;
-    margin: 5rem 10rem;
+    width: 20.5rem;
+    height: 49.5rem;
+    background-image: url('../../../public/images/skills-background.jpg');
+    background-size: contain;
+    margin: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -63,18 +80,89 @@
     box-shadow: 
         rgba(0, 0, 0, 0.19) 0px 10px 20px, 
         rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.skills-header {
+    width: 100%;
+    height: 2rem;
+    padding-right: 0.5rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.personal-desc {
+    width: 100%;
+    height: 12rem;
+    padding: 0 2rem;
+    padding-bottom: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.stats-wrapper {
+    width: 100%;
+    height: 4rem;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.personal-stats {
+    width: 100%;
+    height: 7rem;
+    padding: 0 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-desc {
+    width: 100%;
+    height: 23rem;
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skills-desc > h1 {
+    font-size: 1.5rem;
+}
+
+.skills-list {
+    padding-bottom: 0.5rem;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.skills-bar {
+    background: white;
+
+    border-radius: 0.5rem;
+}
+
+.progress-bar {
+    border-radius: 0.5rem;
 }
 
 /** Resume Styles */
 
 .resume-container {
     width: 40rem;
-    height: 45rem;
-    background: white;
+    height: 43rem;
+    background: rgba(255, 255, 255, 0.9);
     margin: 10rem;
 
     display: flex;
-    flex-direction: column;
 
     position: absolute;
 
@@ -85,14 +173,111 @@
         rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.resume-header {
+.resume-left {
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.resume-left > img {
+    width: 12rem;
+    height: 8rem;
+    margin: 1.5rem 0;
+
+    place-self: center;
+    border-radius: 1rem;
+}
+
+.resume-contact {
+    width: 100%;
+    height: 7rem;
+    padding: 0 1rem;
+}
+
+.resume-education {
+    width: 100%;
+    height: 6rem;
+    padding: 0 1rem;
+}
+
+.resume-expertise {
+    width: 100%;
+    height: 11rem;
+    padding: 0 1rem;
+}
+
+.resume-language {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.resume-contact > h1,
+.resume-education > h1,
+.resume-expertise > h1,
+.resume-language > h1,
+.resume-experience > h1,
+.resume-reference > h1 {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+}
+
+.resume-contact > h2,
+.resume-education > h2,
+.resume-expertise > h2,
+.resume-language > h2 {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.resume-contact > p,
+.resume-education > p,
+.resume-expertise > p {
+    font-size: 0.8rem;
+}
+
+.resume-right {
+    width: 55%;
+}
+
+.resume-right > button {
     width: 100%;
     height: 2rem;
     padding: 0.5rem;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+.resume-desc {
+    width: 100%;
+    height: 9rem;
+    padding: 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-desc > h1 {
+    font-size: 1.5rem;
+}
+
+.resume-desc > h2 {
+    font-size: 1.2rem;
+}
+
+.resume-experience {
+    width: 100%;
+    height: 24rem;
+    padding: 0 1rem;
+}
+
+.resume-reference {
+    width: 100%;
+    padding: 0 1rem;
+}
+
