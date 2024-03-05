@@ -54,8 +54,37 @@ const Resume = () => {
                     onMouseMove={handleMouseMove}
                     onMouseUp={handleMouseUp}
                 >
-                    <div className="resume-header">
-                        <h1>Resume</h1>
+                    <div className="resume-left">
+                        <Image 
+                            src='/images/coming-soon.jpg' 
+                            alt='profile picture'
+                            width={100}
+                            height={100}
+                        />
+                        <div className="resume-contact">
+                            <h1>Contact</h1>
+                            <h2>Email</h2>
+                            <p>👉 jigdreltsheringtobden@gmail.com</p>
+                        </div>
+                        <div className="resume-education">
+                            <h1>Education</h1>
+                            <h2>Bachelor of Science</h2>
+                            <p>👉 Stamford Internation University</p>
+                        </div>
+                        <div className="resume-expertise">
+                            <h1>Expertise</h1>
+                            <h2>⭐ UI/UX</h2>
+                            <h2>⭐ Front End</h2>
+                            <h2>⭐ Back End</h2>
+                            <h2>⭐ Blender</h2>
+                        </div>
+                        <div className="resume-language">
+                            <h1>Language</h1>
+                            <h2>⭐ Bhutanese</h2>
+                            <h2>⭐ English</h2>
+                        </div>
+                    </div>
+                    <div className="resume-right">
                         <Button
                             variant={'link'}
                             className='p-0 m-0 decoration-transparent'
@@ -63,13 +92,17 @@ const Resume = () => {
                         >
                             <h1>❌</h1>
                         </Button>
-                    </div>
-                    <div className="resume-body">
-                        <div className="resume-left">
-                            left
+                        <div className="resume-desc">
+                            <h1>Jigdrel Tshering Tobden</h1>
+                            <h2>Freelancer</h2>
+                            <p>sdfjb sdjkfb sdf sdfasdf sdkjfb</p>
+                            <p>sdfjb sdjkfb sdf sdfasdf sdkjfb</p>
                         </div>
-                        <div className="resume-right">
-                            right
+                        <div className="resume-experience">
+                            <h1>Experience</h1>
+                        </div>
+                        <div className="resume-reference">
+                            <h1>Reference</h1>
                         </div>
                     </div>
                 </div>
