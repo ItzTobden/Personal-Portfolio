@@ -95,8 +95,6 @@ const Resume = () => {
                         <div className="resume-desc">
                             <h1>Jigdrel Tshering Tobden</h1>
                             <h2>Freelancer</h2>
-                            <p>sdfjb sdjkfb sdf sdfasdf sdkjfb</p>
-                            <p>sdfjb sdjkfb sdf sdfasdf sdkjfb</p>
                         </div>
                         <div className="resume-experience">
                             <h1>Experience</h1>
